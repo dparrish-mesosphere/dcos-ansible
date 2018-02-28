@@ -5,6 +5,11 @@ running the community version of DC/OS.
 
 ## Dependencies
 
+We assume you at least 4 systems, each of which has CentOS 7.2 or 7.3 installed.
+This may work on 7.4, however it has not been tested, nor has this been tested
+on RHEL and will likely not work due to yum repositories that will be added to
+the cluster to install Docker.
+
 Ansible needs to be installed on the system that will drive the deployment
 process. For installation instructions, refer to the Ansible install docs found
 [here](http://docs.ansible.com/ansible/latest/intro_installation.html).
@@ -21,7 +26,8 @@ git clone https://bitbucket.org/pumphouse_p/dcos-ansible.git
 cd dcos-ansible
 ```
 
-Update the `hosts` file with the IP addresses or hostnames of the systems you would like to use for your cluster, for example:
+Update the `hosts` file with the IP addresses or hostnames of the systems you
+would like to use for your cluster, for example:
 
 ```yaml
 [bootstrap]
