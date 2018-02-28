@@ -12,7 +12,7 @@ the cluster to install Docker.
 
 Ansible needs to be installed on the system that will drive the deployment
 process. For installation instructions, refer to the Ansible install docs found
-[here](http://docs.ansible.com/ansible/latest/intro_installation.html).
+[here](https://github.com/dparrish-mesosphere/dcos-ansible.git).
 
 You will need to have an SSH key installed on your remote systems before you
 proceed with the installation.
