@@ -73,5 +73,5 @@ host_key_checking=False
 When ready to start installing DC/OS, run the following command:
 
 ```
-ansible-playbook -i hosts --private-key <path_to_ssh_key> main.yaml
+ansible-playbook -i hosts --private-key <path_to_ssh_key> --extra-vars="dcos_version=dcos-1.10" main.yaml
 ```
